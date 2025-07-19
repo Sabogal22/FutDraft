@@ -1,0 +1,1022 @@
+[
+  {
+    "id": 1,
+    "real_name": "Rodrigo Hernández Cascante",
+    "name": "Rodri",
+    "rating": 98,
+    "position": "MCD",
+    "nationality": "Spain",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/75_shapeshifters.png?fm=png&ixlib=java-2.1.0&w=252&s=e9a1a0d16867e9aa9b2327f1cf34c6b7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p100895162.png?fm=png&ixlib=java-2.1.0&w=252&s=4566fa87fe2ce74a28222cee970a30c6"
+  },
+  {
+    "id": 2,
+    "real_name": "Mohamed Salah Hamed Ghaly",
+    "name": "Salah",
+    "rating": 97,
+    "position": "RW",
+    "nationality": "Egypt",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/11_team_of_the_season.png?fm=png&ixlib=java-2.1.0&w=252&s=e2aa19386182db228f1d2ada32c77636",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p184758707.png?fm=png&ixlib=java-2.1.0&verzion=2&w=252&s=69f0db3ef96d771496e413f8c2705ebc"
+  },
+  {
+    "id": 3,
+    "real_name": "Jude Victor William Bellingham",
+    "name": "Bellingham",
+    "rating": 98,
+    "position": "CAM",
+    "nationality": "England",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/16_futties.png?fm=png&ixlib=java-2.1.0&w=252&s=a2cf5689ecc1c565e9ed686a048a5fd7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p218356179.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=28af8cedc3cfe26203017da456984148"
+  },
+  {
+    "id": 4,
+    "real_name": "Erling Braut Håland",
+    "name": "Haaland",
+    "rating": 96,
+    "position": "ST",
+    "nationality": "Norway",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/11_team_of_the_season.png?fm=png&ixlib=java-2.1.0&w=252&s=e2aa19386182db228f1d2ada32c77636",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p201565677.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=f0928d5aa38c03de01451ff9cfbb7fca"
+  },
+  {
+    "id": 5,
+    "real_name": "Vinicius José Paixão de Oliveira Junior",
+    "name": "Vini Jr.",
+    "rating": 98,
+    "position": "LW",
+    "nationality": "Brazil",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/16_futties.png?fm=png&ixlib=java-2.1.0&w=252&s=a2cf5689ecc1c565e9ed686a048a5fd7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p218342602.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=fe38c07adc0640c3eff36c6bdd807a50"
+  },
+  {
+    "id": 6,
+    "real_name": "Kylian Mbappé Lottin",
+    "name": "Mbappe",
+    "rating": 99,
+    "position": "ST",
+    "nationality": "France",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/16_futties.png?fm=png&ixlib=java-2.1.0&w=252&s=a2cf5689ecc1c565e9ed686a048a5fd7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p201558339.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=d0f751c7fb1c69378a1a994cec2c262b"
+  },
+  {
+    "id": 7,
+    "real_name": "Virgil van Dijk",
+    "name": "Van Dijk",
+    "rating": 99,
+    "position": "CB",
+    "nationality": "Netherlands",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/16_futties.png?fm=png&ixlib=java-2.1.0&w=252&s=a2cf5689ecc1c565e9ed686a048a5fd7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p151198320.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=41652766c35563ab4017d94eda47efdc"
+  },
+  {
+    "id": 8,
+    "real_name": "Harry Edward Kane",
+    "name": "Kane",
+    "rating": 98,
+    "position": "ST",
+    "nationality": "England",
+    "club": "FC Bayern München",
+    "league": "Bundesliga",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/75_shapeshifters.png?fm=png&ixlib=java-2.1.0&w=252&s=e9a1a0d16867e9aa9b2327f1cf34c6b7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p201528718.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=54c7c2bd1e453e07f9a14d4ffbae75f3"
+  },
+  {
+    "id": 9,
+    "real_name": "Florian Richard Wirtz",
+    "name": "Wirtz",
+    "rating": 96,
+    "position": "CAM",
+    "nationality": "Germany",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/11_team_of_the_season.png?fm=png&ixlib=java-2.1.0&w=252&s=e2aa19386182db228f1d2ada32c77636",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p184806006.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=ec3fee3a45dfe5f2d5b271299ad038e9"
+  },
+  {
+    "id": 10,
+    "real_name": "Alisson Ramsés Becker",
+    "name": "Alisson",
+    "rating": 98,
+    "position": "GK",
+    "nationality": "Brazil",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/16_futties.png?fm=png&ixlib=java-2.1.0&w=252&s=a2cf5689ecc1c565e9ed686a048a5fd7",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p84098911.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=8ec73c99c16bcc9cd3b9fd8f1a626840"
+  },
+  {
+    "id": 11,
+    "name": "Kevin De Bruyne",
+    "rating": 89,
+    "position": "CM",
+    "nationality": "Belgium",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/192/985/25_120.png"
+  },
+  {
+    "id": 12,
+    "name": "Thibaut Courtois",
+    "rating": 89,
+    "position": "GK",
+    "nationality": "Belgium",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/192/119/25_120.png"
+  },
+  {
+    "id": 13,
+    "name": "Robert Lewandowski",
+    "rating": 89,
+    "position": "ST",
+    "nationality": "Poland",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/188/545/25_120.png"
+  },
+  {
+    "id": 14,
+    "name": "Jamal Musiala",
+    "rating": 88,
+    "position": "CAM",
+    "nationality": "Germany",
+    "club": "FC Bayern München",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/256/790/25_120.png"
+  },
+  {
+    "id": 15,
+    "name": "Bukayo Saka",
+    "rating": 88,
+    "position": "RW",
+    "nationality": "England",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/246/669/25_120.png"
+  },
+  {
+    "id": 16,
+    "name": "Federico Santiago Valverde Dipetta",
+    "rating": 88,
+    "position": "CM",
+    "nationality": "Uruguay",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/239/053/25_120.png"
+  },
+  {
+    "id": 17,
+    "name": "Raphael Dias Belloli",
+    "rating": 88,
+    "position": "RW",
+    "nationality": "Brazil",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/233/419/25_120.png"
+  },
+  {
+    "id": 18,
+    "name": "Lautaro Javier Martínez",
+    "rating": 88,
+    "position": "ST",
+    "nationality": "Argentina",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/231/478/25_120.png"
+  },
+  {
+    "id": 19,
+    "name": "Joshua Walter Kimmich",
+    "rating": 88,
+    "position": "MCD",
+    "nationality": "Germany",
+    "club": "FC Bayern München",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/212/622/25_120.png"
+  },
+  {
+    "id": 20,
+    "name": "Antonio Rüdiger",
+    "rating": 88,
+    "position": "CB",
+    "nationality": "Germany",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/205/452/25_120.png"
+  },
+  {
+    "id": 21,
+    "name": "Jan Oblak",
+    "rating": 88,
+    "position": "GK",
+    "nationality": "Slovenia",
+    "club": "Atlético Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/200/389/25_120.png"
+  },
+  {
+    "id": 22,
+    "name": "Marc-André ter Stegen",
+    "rating": 88,
+    "position": "GK",
+    "nationality": "Germany",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/192/448/25_120.png"
+  },
+  {
+    "id": 23,
+    "name": "Cole Jermaine Palmer",
+    "rating": 87,
+    "position": "RW",
+    "nationality": "England",
+    "club": "Chelsea",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/257/534/25_120.png"
+  },
+  {
+    "id": 24,
+    "name": "Pedro González López",
+    "rating": 87,
+    "position": "CM",
+    "nationality": "Spain",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/251/854/25_120.png"
+  },
+  {
+    "id": 25,
+    "name": "William Alain André Gabriel Saliba",
+    "rating": 87,
+    "position": "CB",
+    "nationality": "France",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/243/715/25_120.png"
+  },
+  {
+    "id": 26,
+    "name": "Alessandro Bastoni",
+    "rating": 87,
+    "position": "CB",
+    "nationality": "Italy",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/237/383/25_120.png"
+  },
+  {
+    "id": 27,
+    "name": "Declan Rice",
+    "rating": 87,
+    "position": "CDM",
+    "nationality": "England",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/234/378/25_120.png"
+  },
+  {
+    "id": 28,
+    "name": "Gabriel dos Santos Magalhães",
+    "rating": 87,
+    "position": "CB",
+    "nationality": "Brazil",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/232/580/25_120.png"
+  },
+  {
+    "id": 29,
+    "name": "Victor James Osimhen",
+    "rating": 87,
+    "position": "ST",
+    "nationality": "Nigeria",
+    "club": "Galatasaray SK",
+    "league": "Süper Lig",
+    "image": "https://cdn.sofifa.net/players/232/293/25_120.png"
+  },
+  {
+    "id": 30,
+    "name": "Masour Ousmane Dembélé",
+    "rating": 87,
+    "position": "RW",
+    "nationality": "France",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/231/443/25_120.png"
+  },
+  {
+    "id": 31,
+    "name": "Gianluigi Donnarumma",
+    "rating": 87,
+    "position": "GK",
+    "nationality": "Italy",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/230/621/25_120.png"
+  },
+  {
+    "id": 32,
+    "name": "Nicolò Barella",
+    "rating": 87,
+    "position": "CM",
+    "nationality": "Italy",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/224/232/25_120.png"
+  },
+  {
+    "id": 33,
+    "name": "Martin Ødegaard",
+    "rating": 87,
+    "position": "CAM",
+    "nationality": "Norway",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/222/665/25_120.png"
+  },
+  {
+    "id": 34,
+    "name": "Mike Peterson Maignan",
+    "rating": 87,
+    "position": "GK",
+    "nationality": "France",
+    "club": "AC Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/215/698/25_120.png"
+  },
+  {
+    "id": 35,
+    "name": "Jonathan Glao Tah",
+    "rating": 87,
+    "position": "CB",
+    "nationality": "Germany",
+    "club": "Bayer 04 Leverkusen",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/213/331/25_120.png"
+  },
+  {
+    "id": 36,
+    "name": "Marcos Aoás Corrêa",
+    "rating": 87,
+    "position": "CB",
+    "nationality": "Brazil",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/207/865/25_120.png"
+  },
+  {
+    "id": 37,
+    "name": "Antoine Griezmann",
+    "rating": 87,
+    "position": "ST",
+    "nationality": "France",
+    "club": "Atlético Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/194/765/25_120.png"
+  },
+  {
+    "id": 38,
+    "name": "Yann Sommer",
+    "rating": 87,
+    "position": "GK",
+    "nationality": "Switzerland",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/177/683/25_120.png"
+  },
+  {
+    "id": 39,
+    "name": "Lionel Andrés Messi Cuccitini",
+    "rating": 87,
+    "position": "RW",
+    "nationality": "Argentina",
+    "club": "Inter Miami",
+    "league": "MLS",
+    "image": "https://cdn.sofifa.net/players/158/023/25_120.png"
+  },
+  {
+    "id": 40,
+    "name": "Lamine Yamal Nasraoui Ebana",
+    "rating": 86,
+    "position": "RW",
+    "nationality": "Spain",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/277/643/25_120.png"
+  },
+  {
+    "id": 41,
+    "name": "Julián Álvarez",
+    "rating": 86,
+    "position": "ST",
+    "nationality": "Argentina",
+    "club": "Atlético Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/246/191/25_120.png"
+  },
+  {
+    "id": 42,
+    "name": "Rodrygo Silva de Goes",
+    "rating": 86,
+    "position": "RW",
+    "nationality": "Brazil",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/243/812/25_120.png"
+  },
+  {
+    "id": 43,
+    "name": "Viktor Einar Gyökeres",
+    "rating": 86,
+    "position": "ST",
+    "nationality": "Sweden",
+    "club": "Sporting CP",
+    "league": "Liga Portugal",
+    "image": "https://cdn.sofifa.net/players/241/651/25_120.png"
+  },
+  {
+    "id": 44,
+    "name": "Jules Olivier Koundé",
+    "rating": 86,
+    "position": "CB",
+    "nationality": "France",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/241/486/25_120.png"
+  },
+  {
+    "id": 45,
+    "name": "Alexis Mac Allister",
+    "rating": 86,
+    "position": "CM",
+    "nationality": "Argentina",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/239/837/25_120.png"
+  },
+  {
+    "id": 46,
+    "name": "Rúben dos Santos Gato Alves Dias",
+    "rating": 86,
+    "position": "CB",
+    "nationality": "Portugal",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/239/818/25_120.png"
+  },
+  {
+    "id": 47,
+    "name": "Gleison Bremer Silva Nascimento",
+    "rating": 86,
+    "position": "CB",
+    "nationality": "Brazil",
+    "club": "Juventus",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/239/580/25_120.png"
+  },
+  {
+    "id": 48,
+    "name": "Philip Walter Foden",
+    "rating": 86,
+    "position": "LW",
+    "nationality": "England",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/237/692/25_120.png"
+  },
+  {
+    "id": 49,
+    "name": "Achraf Hakimi Mouh",
+    "rating": 86,
+    "position": "RB",
+    "nationality": "Morocco",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/235/212/25_120.png"
+  },
+  {
+    "id": 50,
+    "name": "Gregor Kobel",
+    "rating": 86,
+    "position": "GK",
+    "nationality": "Switzerland",
+    "club": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/235/073/25_120.png"
+  },
+  {
+    "id": 51,
+    "name": "Alexander Isak",
+    "rating": 86,
+    "position": "ST",
+    "nationality": "Sweden",
+    "club": "Newcastle United",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/233/731/25_120.png"
+  },
+  {
+    "id": 52,
+    "name": "Theo Bernard François Hernández",
+    "rating": 86,
+    "position": "LB",
+    "nationality": "France",
+    "club": "AC Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/232/656/25_120.png"
+  },
+  {
+    "id": 53,
+    "name": "Trent John Alexander-Arnold",
+    "rating": 86,
+    "position": "RB",
+    "nationality": "England",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/231/281/25_120.png"
+  },
+  {
+    "id": 54,
+    "name": "Frenkie de Jong",
+    "rating": 86,
+    "position": "CM",
+    "nationality": "Netherlands",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/228/702/25_120.png"
+  },
+  {
+    "id": 55,
+    "name": "David Raya Martín",
+    "rating": 86,
+    "position": "GK",
+    "nationality": "Spain",
+    "club": "Arsenal",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/220/901/25_120.png"
+  },
+  {
+    "id": 56,
+    "name": "Serhou Yadaly Guirassy",
+    "rating": 86,
+    "position": "ST",
+    "nationality": "Guinea",
+    "club": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/215/441/25_120.png"
+  },
+  {
+    "id": 57,
+    "name": "Bruno Miguel Borges Fernandes",
+    "rating": 86,
+    "position": "CAM",
+    "nationality": "Portugal",
+    "club": "Manchester United",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/212/198/25_120.png"
+  },
+  {
+    "id": 58,
+    "name": "Paulo Bruno Exequiel Dybala",
+    "rating": 86,
+    "position": "CAM",
+    "nationality": "Argentina",
+    "club": "AS Roma",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/211/110/25_120.png"
+  },
+  {
+    "id": 59,
+    "name": "Ederson Santana de Moraes",
+    "rating": 86,
+    "position": "GK",
+    "nationality": "Brazil",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/210/257/25_120.png"
+  },
+  {
+    "id": 60,
+    "name": "Hakan Çalhanoğlu",
+    "rating": 86,
+    "position": "CM",
+    "nationality": "Turkey",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/208/128/25_120.png"
+  },
+  {
+    "id": 61,
+    "name": "Daniel Carvajal Ramos",
+    "rating": 86,
+    "position": "RB",
+    "nationality": "Spain",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/204/963/25_120.png"
+  },
+  {
+    "id": 62,
+    "name": "Damián Emiliano Martínez Romero",
+    "rating": 86,
+    "position": "GK",
+    "nationality": "Argentina",
+    "club": "Aston Villa",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/202/811/25_120.png"
+  },
+  {
+    "id": 63,
+    "name": "Heung-Min Son",
+    "rating": 86,
+    "position": "LW",
+    "nationality": "South Korea",
+    "club": "Tottenham Hotspur",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/200/104/25_120.png"
+  },
+  {
+    "id": 64,
+    "name": "Granit Xhaka",
+    "rating": 86,
+    "position": "CM",
+    "nationality": "Switzerland",
+    "club": "Bayer 04 Leverkusen",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/199/503/25_120.png"
+  },
+  {
+    "id": 65,
+    "name": "Karim Benzema",
+    "rating": 86,
+    "position": "ST",
+    "nationality": "France",
+    "club": "Al-Ittihad",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/165/153/25_120.png"
+  },
+  {
+    "id": 66,
+    "name": "Giorgi Mamardashvili",
+    "rating": 85,
+    "position": "GK",
+    "nationality": "Georgia",
+    "club": "Valencia",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/262/621/25_120.png"
+  },
+  {
+    "id": 67,
+    "name": "Nicholas Williams Arthuer",
+    "rating": 85,
+    "position": "RW",
+    "nationality": "Spain",
+    "club": "Athletic Club",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/256/516/25_120.png"
+  },
+  {
+    "id": 68,
+    "name": "Moisés Isaac Caicedo Corozo",
+    "rating": 85,
+    "position": "CDM",
+    "nationality": "Ecuador",
+    "club": "Chelsea",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/256/079/25_120.png"
+  },
+  {
+    "id": 69,
+    "name": "Vítor Machado Ferreira",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Portugal",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/255/253/25_120.png"
+  },
+  {
+    "id": 70,
+    "name": "Ronald Federico Araújo da Silva",
+    "rating": 85,
+    "position": "CB",
+    "nationality": "Uruguay",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/253/163/25_120.png"
+  },
+  {
+    "id": 71,
+    "name": "Bruno Guimarães Rodrigues Moura",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Brazil",
+    "club": "Newcastle United",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/247/851/25_120.png"
+  },
+  {
+    "id": 72,
+    "name": "Michael Akpovie Olise",
+    "rating": 85,
+    "position": "RW",
+    "nationality": "France",
+    "club": "FC Bayern München",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/247/827/25_120.png"
+  },
+  {
+    "id": 73,
+    "name": "Nico Cedric Schlotterbeck",
+    "rating": 85,
+    "position": "CB",
+    "nationality": "Germany",
+    "club": "Borussia Dortmund",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/247/819/25_120.png"
+  },
+  {
+    "id": 74,
+    "name": "Khvicha Kvaratskhelia",
+    "rating": 85,
+    "position": "LW",
+    "nationality": "Georgia",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/247/635/25_120.png"
+  },
+  {
+    "id": 75,
+    "name": "Daniel Olmo Carvajal",
+    "rating": 85,
+    "position": "CAM",
+    "nationality": "Spain",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/244/260/25_60.png"
+  },
+  {
+    "id": 76,
+    "name": "Rafael Alexandre da Conceição Leão",
+    "rating": 85,
+    "position": "LW",
+    "nationality": "Portugal",
+    "club": "AC Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/241/721/25_120.png"
+  },
+  {
+    "id": 77,
+    "name": "Sandro Tonali",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Italy",
+    "club": "Newcastle United",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/241/096/25_120.png"
+  },
+  {
+    "id": 78,
+    "name": "Luis Fernando Díaz Marulanda",
+    "rating": 85,
+    "position": "LW",
+    "nationality": "Colombia",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/241/084/25_120.png"
+  },
+  {
+    "id": 79,
+    "name": "Éder Gabriel Militão",
+    "rating": 85,
+    "position": "CB",
+    "nationality": "Brazil",
+    "club": "Real Madrid",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/240/130/25_120.png"
+  },
+  {
+    "id": 80,
+    "name": "Ibrahima Konaté",
+    "rating": 85,
+    "position": "CB",
+    "nationality": "France",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/237/678/25_120.png"
+  },
+  {
+    "id": 81,
+    "name": "Unai Simón Mendibil",
+    "rating": 85,
+    "position": "GK",
+    "nationality": "Spain",
+    "club": "Athletic Club",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/230/869/25_120.png"
+  },
+  {
+    "id": 82,
+    "name": "Dayotchanculle Oswald Upamecano",
+    "rating": 85,
+    "position": "CB",
+    "nationality": "France",
+    "club": "Bayern Munich",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/229/558/25_120.png"
+  },
+  {
+    "id": 83,
+    "name": "Federico Dimarco",
+    "rating": 85,
+    "position": "LB",
+    "nationality": "Italy",
+    "club": "Inter Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/226/268/25_120.png"
+  },
+  {
+    "id": 84,
+    "name": "Sergej Milinković-Savić",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Serbia",
+    "club": "Al Hilal",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/223/848/25_120.png"
+  },
+  {
+    "id": 85,
+    "name": "Bernardo Mota Veiga de Carvalho e Silva",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Portugal",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/218/667/25_120.png"
+  },
+  {
+    "id": 86,
+    "name": "N'Golo Kanté",
+    "rating": 85,
+    "position": "CDM",
+    "nationality": "France",
+    "club": "Al Ittihad",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/215/914/25_120.png"
+  },
+  {
+    "id": 87,
+    "name": "João Pedro Cavaco Cancelo",
+    "rating": 85,
+    "position": "RB",
+    "nationality": "Portugal",
+    "club": "Al Hilal",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/210/514/25_120.png"
+  },
+  {
+    "id": 88,
+    "name": "Alejandro Grimaldo García",
+    "rating": 85,
+    "position": "LB",
+    "nationality": "Spain",
+    "club": "Bayer 04 Leverkusen",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/210/035/25_120.png"
+  },
+  {
+    "id": 89,
+    "name": "Riyad Mahrez",
+    "rating": 85,
+    "position": "RW",
+    "nationality": "Algeria",
+    "club": "Al Ahli",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/204/485/25_120.png"
+  },
+  {
+    "id": 90,
+    "name": "David de Gea Quintana",
+    "rating": 85,
+    "position": "GK",
+    "nationality": "Spain",
+    "club": "Fiorentina",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/193/080/25_120.png"
+  },
+  {
+    "id": 91,
+    "name": "Wojciech Tomasz Szczęsny",
+    "rating": 85,
+    "position": "GK",
+    "nationality": "Poland",
+    "club": "FC Barcelona",
+    "league": "La Liga",
+    "image": "https://cdn.sofifa.net/players/186/153/25_120.png"
+  },
+  {
+    "id": 92,
+    "name": "Luka Modrić",
+    "rating": 85,
+    "position": "CM",
+    "nationality": "Croatia",
+    "club": "AC Milan",
+    "league": "Serie A",
+    "image": "https://cdn.sofifa.net/players/177/003/25_120.png"
+  },
+  {
+    "id": 93,
+    "name": "Cristiano Ronaldo dos Santos Aveiro",
+    "rating": 85,
+    "position": "ST",
+    "nationality": "Portugal",
+    "club": "Al Nassr",
+    "league": "Saudi Pro League",
+    "image": "https://cdn.sofifa.net/players/020/801/25_120.png"
+  },
+  {
+    "id": 94,
+    "name": "João Pedro Gonçalves Neves",
+    "rating": 84,
+    "position": "CM",
+    "nationality": "Portugal",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "image": "https://cdn.sofifa.net/players/272/834/25_120.png"
+  },
+  {
+    "id": 95,
+    "name": "Omar Khaled Mohamed Marmoush",
+    "rating": 84,
+    "position": "ST",
+    "nationality": "Egypt",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/256/675/25_120.png"
+  },
+  {
+    "id": 96,
+    "name": "Jeremie Agyekum Frimpong",
+    "rating": 84,
+    "position": "RB",
+    "nationality": "Netherlands",
+    "club": "Bayer 04 Leverkusen",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/253/149/25_120.png"
+  },
+  {
+    "id": 97,
+    "name": "Joško Gvardiol",
+    "rating": 84,
+    "position": "CB",
+    "nationality": "Croatia",
+    "club": "Manchester City",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/251/517/25_120.png"
+  },
+  {
+    "id": 98,
+    "name": "Dejan Kulusevski",
+    "rating": 84,
+    "position": "RW",
+    "nationality": "Sweden",
+    "club": "Tottenham Hotspur",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/247/394/25_120.png"
+  },
+  {
+    "id": 99,
+    "name": "Ryan Jiro Gravenberch",
+    "rating": 84,
+    "position": "CM",
+    "nationality": "Netherlands",
+    "club": "Liverpool",
+    "league": "Premier League",
+    "image": "https://cdn.sofifa.net/players/246/104/25_120.png"
+  },
+  {
+    "id": 100,
+    "name": "Xavier Quentin Shay Simons",
+    "rating": 84,
+    "position": "CAM",
+    "nationality": "Netherlands",
+    "club": "RB Leipzig",
+    "league": "Bundesliga",
+    "image": "https://cdn.sofifa.net/players/245/367/25_120.png"
+  }
+]
