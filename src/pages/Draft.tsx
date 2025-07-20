@@ -7,11 +7,15 @@ import playersData from "../data/players.json";
 
 export interface Player {
   id: number;
+  real_name: string;
   name: string;
-  position: string;
   rating: number;
+  position: string;
+  position_alternatives?: string[];
   nationality: string;
   club: string;
+  league: string;
+  backup_image: string;
   image: string;
 }
 
@@ -47,13 +51,19 @@ export default function Draft() {
     );
 
     const seenIds = new Set<number>();
-    const matching = playersData.filter(
-      (p) =>
-        p.position === basePosition &&
-        !alreadyUsedIds.has(p.id) &&
-        !seenIds.has(p.id) &&
-        seenIds.add(p.id)
-    );
+
+    const matching = (playersData as Player[]).filter((p) => {
+      const mainMatch = p.position === basePosition;
+      const altMatch = p.position_alternatives?.includes(basePosition);
+      const isNotUsed = !alreadyUsedIds.has(p.id);
+      const isUnique = !seenIds.has(p.id);
+
+      if ((mainMatch || altMatch) && isNotUsed && isUnique) {
+        seenIds.add(p.id);
+        return true;
+      }
+      return false;
+    });
 
     const shuffled = [...matching].sort(() => Math.random() - 0.5);
     const randomFive = shuffled.slice(0, 5);
@@ -210,18 +220,36 @@ export default function Draft() {
                     <div
                       key={player.id}
                       onClick={() => handlePlayerAssign(player)}
-                      className="bg-yellow-100 hover:bg-yellow-200 rounded-xl p-3 cursor-pointer shadow-md hover:scale-105 transition text-center"
+                      className="relative cursor-pointer transition-transform hover:scale-105 aspect-[2/3] rounded-xl overflow-hidden shadow-md"
                     >
+                      {/* Fondo de carta */}
+                      <img
+                        src={player.backup_image}
+                        alt="carta"
+                        className="absolute inset-0 w-full h-full object-cover z-0"
+                      />
+
+                      {/* Imagen del jugador */}
                       <img
                         src={player.image}
                         alt={player.name}
-                        className="w-full h-28 object-contain mb-2 rounded"
+                        className="absolute inset-0 w-full h-full object-contain p-3 z-10"
                       />
-                      <h4 className="font-bold text-sm">{player.name}</h4>
-                      <p className="text-sm text-gray-700">
-                        {player.position} - {player.rating}
-                      </p>
-                      <p className="text-xs text-gray-500">{player.club}</p>
+
+                      {/* Rating y posición (arriba a la izquierda) */}
+                      <div className="absolute top-13 left-5 z-20 text-white drop-shadow font-bold text-sm sm:text-base">
+                        <div className="text-lg sm:text-xl">
+                          {player.rating}
+                        </div>
+                        <div className="uppercase text-xs">
+                          {player.position}
+                        </div>
+                      </div>
+
+                      {/* Nombre del jugador (más arriba del borde inferior) */}
+                      <div className="absolute bottom-13 w-full text-center z-20 text-white font-semibold text-sm sm:text-base drop-shadow">
+                        {player.name}
+                      </div>
                     </div>
                   ))}
                 </div>
