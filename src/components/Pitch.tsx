@@ -76,17 +76,23 @@ export default function Pitch({
             onClick={() => onPositionClick(pos)}
           >
             {player ? (
-              <div className="w-20 h-28 bg-yellow-300 rounded-xl shadow-lg border-2 border-white flex flex-col items-center justify-start px-1 py-2 text-black text-center hover:scale-105 transition">
+              <div
+                className="w-25 h-40 bg-cover bg-center shadow-lg flex flex-col items-center justify-start px-1 py-2 text-white text-center hover:scale-105 transition relative"
+                style={{
+                  backgroundImage: `url(${player.backup_image})`,
+                }}
+              >
                 <img
                   src={player.image}
                   alt={player.name}
-                  className="w-12 h-12 object-contain mb-1 rounded"
+                  className="w-30 h-auto object-contain mb-0"
+                  style={{ marginBottom: "-37px" }}
                 />
-                <p className="text-[10px] font-bold leading-tight">
+                <p className="text-[9px] font-bold leading-tight drop-shadow-md">
                   {player.name}
                 </p>
-                <p className="text-[10px] text-gray-700">{player.position}</p>
-                <span className="text-xs font-bold mt-1 bg-white rounded px-1">
+                <p className="text-[9px] drop-shadow-sm">{player.position}</p>
+                <span className="text-xs font-bold mt-1 bg-black/60 px-1 rounded text-yellow-300 drop-shadow-md">
                   {player.rating}
                 </span>
               </div>
