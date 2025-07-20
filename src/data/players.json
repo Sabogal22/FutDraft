@@ -358,7 +358,18 @@
     "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/52_futties_icon.png?fm=png&ixlib=java-2.1.0&w=252&s=8d31490b99fd450027613639bbdcfdcd",
     "image": "https://cdn3.futbin.com/content/fifa25/img/players/p67118540.png?fm=png&ixlib=java-2.1.0&verzion=1&w=252&s=0c8f8a53e56c43b45133da7b529b1b23"
   },
-  /* Dembele */
+  {
+    "id": 31,
+    "real_name": "Masour Ousmane Dembélé",
+    "name": "Dembélé",
+    "rating": 97,
+    "position": "RW",
+    "nationality": "France",
+    "club": "Paris Saint-Germain",
+    "league": "Ligue 1",
+    "backup_image": "https://cdn3.futbin.com/content/fifa25/img/cards/hd/11_team_of_the_season.png?fm=png&ixlib=java-2.1.0&w=252&s=e2aa19386182db228f1d2ada32c77636",
+    "image": "https://cdn3.futbin.com/content/fifa25/img/players/p151226387.png?fm=png&ixlib=java-2.1.0&verzion=2&w=252&s=2d3e692637f78fbfe8e5919cf235790b"
+  },
   {
     "id": 400,
     "real_name": "Erling Braut Håland",
