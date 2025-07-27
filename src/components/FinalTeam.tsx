@@ -54,6 +54,20 @@ export default function FinalTeam({
     .filter((p) => isAttacker(p.position))
     .sort((a, b) => b.rating - a.rating)[0];
 
+  const renderStars = (rating: number) => {
+    let stars = 0;
+
+    if (rating >= 90) stars = 5;
+    else if (rating >= 80) stars = 4;
+    else if (rating >= 70) stars = 3;
+    else if (rating >= 60) stars = 2;
+    else stars = 1;
+
+    return Array.from({ length: 5 }, (_, i) => (
+      <span key={i}>{i < stars ? "★" : "☆"}</span>
+    ));
+  };
+
   return (
     <div className="mt-20 text-center">
       <h2 className="text-3xl font-bold mb-6 text-green-300">
@@ -100,13 +114,7 @@ export default function FinalTeam({
           <p className="text-white text-lg mb-1">Valoración final</p>
           <div className="flex justify-center items-center gap-2">
             <div className="flex gap-1 text-yellow-400 text-2xl">
-              {Array.from({ length: 5 }, (_, i) => {
-                const starValue = (rating / 100) * 5;
-                if (i + 1 <= starValue) return <span key={i}>★</span>;
-                else if (i + 0.5 <= starValue)
-                  return <span key={i}>☆</span>; // opcional para media estrella
-                else return <span key={i}>☆</span>;
-              })}
+              {renderStars(rating)}
             </div>
             <span className="text-white text-lg">({rating})</span>
           </div>
