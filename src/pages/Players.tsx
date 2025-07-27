@@ -39,7 +39,7 @@ export const Players = () => {
             }}
           >
             {/* Posición y media */}
-            <div className="absolute top-13 left-5 text-white text-sm font-bold bg-black/40 px-2 py-1 rounded-md leading-tight">
+            <div className="absolute z-30 top-13 left-5 text-white font-bold px-2 py-1 leading-tight">
               <p>{player.rating}</p>
               <p>{player.position}</p>
             </div>
