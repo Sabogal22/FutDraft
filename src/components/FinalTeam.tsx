@@ -1,4 +1,5 @@
-import React from "react";
+import { useEffect } from "react";
+import confetti from "canvas-confetti";
 
 interface FinalTeamProps {
   assignedPlayers: Record<string, Player | null>;
@@ -67,6 +68,28 @@ export default function FinalTeam({
       <span key={i}>{i < stars ? "★" : "☆"}</span>
     ));
   };
+
+  useEffect(() => {
+    confetti({
+      particleCount: 100,
+      spread: 160,
+      origin: { y: 0.6 },
+    });
+
+    // Puedes hacer que salga desde los lados también
+    confetti({
+      particleCount: 80,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 },
+    });
+    confetti({
+      particleCount: 80,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 },
+    });
+  }, []);
 
   return (
     <div className="mt-20 text-center">
