@@ -205,8 +205,9 @@ export default function Draft() {
                       </div>
 
                       {/* Nombre del jugador (más arriba del borde inferior) */}
-                      <div className="absolute bottom-13 w-full text-center z-20 text-white font-semibold text-sm sm:text-base drop-shadow">
-                        {player.name}
+                      <div className="absolute bottom-12 w-full text-center z-20 text-white font-semibold text-sm sm:text-base drop-shadow">
+                        <p className="font-bold leading-tight">{player.name}</p>
+                        <p className="text-xs">{player.nationality}</p>
                       </div>
                     </div>
                   ))}
