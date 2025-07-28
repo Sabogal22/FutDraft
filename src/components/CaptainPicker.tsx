@@ -32,7 +32,7 @@ export default function CaptainPicker({ onSelect }: Props) {
             onClick={() => onSelect(player)}
           >
             {/* Media y posición */}
-            <div className="absolute top-13 left-5 text-white text-sm font-bold bg-black/50 px-2 py-1 rounded">
+            <div className="absolute top-13 z-30 left-5 text-white text-sm font-bold px-2 py-1 rounded">
               <p>{player.rating}</p>
               <p>{player.position}</p>
             </div>
