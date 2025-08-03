@@ -23,6 +23,7 @@ export interface Player {
 export default function Draft() {
   const [formation, setFormation] = useState<string | null>(null);
   const [captain, setCaptain] = useState<Player | null>(null);
+  const [manager, setManager] = useState<Player | null>(null);
   const [assignedPlayers, setAssignedPlayers] = useState<
     Record<string, Player | null>
   >({});
@@ -137,9 +138,10 @@ export default function Draft() {
 
   const { rating, chemistry } = getTeamStats(assignedPlayers);
 
-  const isDraftComplete = formation
-    ? formationLayouts[formation].every((pos) => assignedPlayers[pos])
-    : false;
+  const isDraftComplete =
+    formation &&
+    formationLayouts[formation].every((pos) => assignedPlayers[pos]) &&
+    manager !== null;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-800 to-green-900 text-white px-6 py-10">
