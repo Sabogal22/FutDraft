@@ -27,6 +27,16 @@ export default function Draft() {
   const [assignedPlayers, setAssignedPlayers] = useState<
     Record<string, Player | null>
   >({});
+  const suplenteSlots = [
+    "SUB1",
+    "SUB2",
+    "SUB3",
+    "SUB4",
+    "SUB5",
+    "SUB6",
+    "SUB7",
+  ];
+  const reservaSlots = ["RES1", "RES2", "RES3", "RES4", "RES5"];
 
   const handleFormationConfirm = (selectedFormation: string) => {
     setFormation(selectedFormation);
@@ -54,18 +64,35 @@ export default function Draft() {
 
     const seenIds = new Set<number>();
 
-    const matching = (playersData as Player[]).filter((p) => {
-      const mainMatch = p.position === basePosition;
-      const altMatch = p.position_alternatives?.includes(basePosition);
-      const isNotUsed = !alreadyUsedIds.has(p.id);
-      const isUnique = !seenIds.has(p.id);
+    let matching: Player[] = [];
 
-      if ((mainMatch || altMatch) && isNotUsed && isUnique) {
-        seenIds.add(p.id);
-        return true;
-      }
-      return false;
-    });
+    if (position.startsWith("SUB") || position.startsWith("RES")) {
+      // Para suplentes y reservas, seleccionamos 5 aleatorios sin importar la posición
+      matching = (playersData as Player[]).filter((p) => {
+        const isNotUsed = !alreadyUsedIds.has(p.id);
+        const isUnique = !seenIds.has(p.id);
+
+        if (isNotUsed && isUnique) {
+          seenIds.add(p.id);
+          return true;
+        }
+        return false;
+      });
+    } else {
+      // Para titulares, seleccionamos por posición
+      matching = (playersData as Player[]).filter((p) => {
+        const mainMatch = p.position === basePosition;
+        const altMatch = p.position_alternatives?.includes(basePosition);
+        const isNotUsed = !alreadyUsedIds.has(p.id);
+        const isUnique = !seenIds.has(p.id);
+
+        if ((mainMatch || altMatch) && isNotUsed && isUnique) {
+          seenIds.add(p.id);
+          return true;
+        }
+        return false;
+      });
+    }
 
     const shuffled = [...matching].sort(() => Math.random() - 0.5);
     const randomFive = shuffled.slice(0, 5);
@@ -79,16 +106,18 @@ export default function Draft() {
       const layout = formationLayouts[formation];
       if (!layout) return;
 
-      const assigned: Record<string, Player | null> = {};
-
-      // Encuentra la primera posición compatible
       const targetPos = layout.find((pos) => pos.startsWith(captain.position));
+      if (!targetPos) return;
 
-      if (targetPos) {
-        assigned[targetPos] = captain;
-      }
+      setAssignedPlayers((prev) => {
+        const alreadyAssigned = prev[targetPos]?.id === captain.id;
+        if (alreadyAssigned) return prev;
 
-      setAssignedPlayers(assigned);
+        return {
+          ...prev,
+          [targetPos]: captain,
+        };
+      });
     }
   }, [formation, captain]);
 
@@ -127,10 +156,14 @@ export default function Draft() {
       return;
     }
 
-    setAssignedPlayers((prev) => ({
-      ...prev,
-      [selectingPosition!]: player,
-    }));
+    if (selectingPosition === "DT") {
+      setManager(player);
+    } else {
+      setAssignedPlayers((prev) => ({
+        ...prev,
+        [selectingPosition!]: player,
+      }));
+    }
 
     setSelectingPosition(null);
     setCandidates([]);
@@ -141,6 +174,8 @@ export default function Draft() {
   const isDraftComplete =
     formation &&
     formationLayouts[formation].every((pos) => assignedPlayers[pos]) &&
+    suplenteSlots.every((slot) => assignedPlayers[slot]) &&
+    reservaSlots.every((slot) => assignedPlayers[slot]) &&
     manager !== null;
 
   return (
@@ -157,6 +192,7 @@ export default function Draft() {
           onReset={() => {
             setFormation(null);
             setCaptain(null);
+            setManager(null);
             setAssignedPlayers({});
           }}
         />

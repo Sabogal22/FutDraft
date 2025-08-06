@@ -140,10 +140,51 @@ export default function Pitch({
             {suplenteSlots.map((slot) => (
               <div
                 key={slot}
-                onClick={() => alert(`Seleccionaste ${slot}`)}
-                className="w-20 h-30 bg-white/30 rounded border border-yellow-400 flex items-center justify-center text-[10px] text-white hover:bg-yellow-400 hover:text-black cursor-pointer"
+                onClick={() => onPositionClick(slot)}
+                className={`w-20 h-32 rounded-xl overflow-hidden relative cursor-pointer ${
+                  assignedPlayers[slot]
+                    ? "" // Sin borde ni efecto
+                    : "border-2 border-yellow-400 transition-transform hover:scale-105"
+                }`}
               >
-                {slot}
+                {assignedPlayers[slot] ? (
+                  <>
+                    {/* Imagen de fondo (backup_image) */}
+                    <img
+                      src={assignedPlayers[slot]!.backup_image}
+                      alt="Carta"
+                      className="absolute inset-0 w-full h-full object-cover z-0"
+                    />
+
+                    {/* Imagen del jugador (image) */}
+                    <img
+                      src={assignedPlayers[slot]!.image}
+                      alt={assignedPlayers[slot]!.name}
+                      className="absolute inset-0 w-full h-full object-contain p-2 z-10"
+                    />
+
+                    {/* Overlay de datos del jugador */}
+                    <div className="absolute bottom-1 w-full text-center text-white z-20 px-1">
+                      <p className="text-[10px] font-bold leading-tight truncate">
+                        {assignedPlayers[slot]!.name}
+                      </p>
+                      <p className="text-[9px] uppercase">
+                        {assignedPlayers[slot]!.position}
+                      </p>
+                      <p className="text-[8px]">
+                        {assignedPlayers[slot]!.club}
+                      </p>
+                      <p className="text-[8px]">
+                        {assignedPlayers[slot]!.nationality}
+                      </p>
+                    </div>
+                  </>
+                ) : (
+                  // Si no hay jugador asignado
+                  <div className="w-full h-full flex items-center justify-center text-white text-xs font-semibold bg-white/20">
+                    {slot}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -153,10 +194,50 @@ export default function Pitch({
             {reservaSlots.map((slot) => (
               <div
                 key={slot}
-                onClick={() => alert(`Seleccionaste ${slot}`)}
-                className="w-20 h-30 bg-white/20 rounded border border-white text-white text-[10px] flex items-center justify-center hover:bg-yellow-400 hover:text-black cursor-pointer"
+                onClick={() => onPositionClick(slot)}
+                className={`w-20 h-32 rounded-xl overflow-hidden relative cursor-pointer ${
+                  assignedPlayers[slot]
+                    ? ""
+                    : "border-2 border-white transition-transform hover:scale-105"
+                }`}
               >
-                {slot}
+                {assignedPlayers[slot] ? (
+                  <>
+                    {/* Imagen de fondo (backup_image) */}
+                    <img
+                      src={assignedPlayers[slot]!.backup_image}
+                      alt="Carta"
+                      className="absolute inset-0 w-full h-full object-cover z-0"
+                    />
+
+                    {/* Imagen del jugador (image) */}
+                    <img
+                      src={assignedPlayers[slot]!.image}
+                      alt={assignedPlayers[slot]!.name}
+                      className="absolute inset-0 w-full h-full object-contain p-2 z-10"
+                    />
+
+                    {/* Overlay de datos del jugador */}
+                    <div className="absolute bottom-1 w-full text-center text-white z-20 px-1">
+                      <p className="text-[10px] font-bold leading-tight truncate">
+                        {assignedPlayers[slot]!.name}
+                      </p>
+                      <p className="text-[9px] uppercase">
+                        {assignedPlayers[slot]!.position}
+                      </p>
+                      <p className="text-[8px]">
+                        {assignedPlayers[slot]!.club}
+                      </p>
+                      <p className="text-[8px]">
+                        {assignedPlayers[slot]!.nationality}
+                      </p>
+                    </div>
+                  </>
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-white text-xs font-semibold bg-white/20">
+                    {slot}
+                  </div>
+                )}
               </div>
             ))}
           </div>
