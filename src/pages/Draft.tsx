@@ -27,16 +27,13 @@ export default function Draft() {
   const [assignedPlayers, setAssignedPlayers] = useState<
     Record<string, Player | null>
   >({});
-  const suplenteSlots = [
-    "SUB1",
-    "SUB2",
-    "SUB3",
-    "SUB4",
-    "SUB5",
-    "SUB6",
-    "SUB7",
-  ];
-  const reservaSlots = ["RES1", "RES2", "RES3", "RES4", "RES5"];
+
+  const [selectingPosition, setSelectingPosition] = useState<string | null>(
+    null
+  );
+  const [candidates, setCandidates] = useState<Player[]>([]);
+
+  const [showFinalTeam, setShowFinalTeam] = useState(false);
 
   const handleFormationConfirm = (selectedFormation: string) => {
     setFormation(selectedFormation);
@@ -45,11 +42,6 @@ export default function Draft() {
   const handleCaptainSelect = (player: Player) => {
     setCaptain(player);
   };
-
-  const [selectingPosition, setSelectingPosition] = useState<string | null>(
-    null
-  );
-  const [candidates, setCandidates] = useState<Player[]>([]);
 
   const handlePositionClick = (position: string) => {
     if (assignedPlayers[position]) return;
@@ -67,7 +59,6 @@ export default function Draft() {
     let matching: Player[] = [];
 
     if (position.startsWith("SUB") || position.startsWith("RES")) {
-      // Para suplentes y reservas, seleccionamos 5 aleatorios sin importar la posición
       matching = (playersData as Player[]).filter((p) => {
         const isNotUsed = !alreadyUsedIds.has(p.id);
         const isUnique = !seenIds.has(p.id);
@@ -79,7 +70,6 @@ export default function Draft() {
         return false;
       });
     } else {
-      // Para titulares, seleccionamos por posición
       matching = (playersData as Player[]).filter((p) => {
         const mainMatch = p.position === basePosition;
         const altMatch = p.position_alternatives?.includes(basePosition);
@@ -99,6 +89,33 @@ export default function Draft() {
 
     setCandidates(randomFive);
     setSelectingPosition(position);
+  };
+
+  const handlePlayerAssign = (player: Player) => {
+    const isAlreadyAssigned = Object.values(assignedPlayers).some(
+      (p) => p?.id === player.id
+    );
+
+    if (isAlreadyAssigned) {
+      alert("Este jugador ya está asignado a otra posición.");
+      return;
+    }
+
+    if (selectingPosition === "DT") {
+      setManager(player);
+      setAssignedPlayers((prev) => ({
+        ...prev,
+        DT: player,
+      }));
+    } else if (selectingPosition) {
+      setAssignedPlayers((prev) => ({
+        ...prev,
+        [selectingPosition]: player,
+      }));
+    }
+
+    setSelectingPosition(null);
+    setCandidates([]);
   };
 
   useEffect(() => {
@@ -153,41 +170,11 @@ export default function Draft() {
     return { rating, chemistry };
   };
 
-  const handlePlayerAssign = (player: Player) => {
-    const isAlreadyAssigned = Object.values(assignedPlayers).some(
-      (p) => p?.id === player.id
-    );
-
-    if (isAlreadyAssigned) {
-      alert("Este jugador ya está asignado a otra posición.");
-      return;
-    }
-
-    if (selectingPosition === "DT") {
-      setManager(player);
-      setAssignedPlayers((prev) => ({
-        ...prev,
-        DT: player,
-      }));
-    } else if (selectingPosition) {
-      setAssignedPlayers((prev) => ({
-        ...prev,
-        [selectingPosition]: player,
-      }));
-    }
-
-    setSelectingPosition(null);
-    setCandidates([]);
-  };
-
   const { rating, chemistry } = getTeamStats(assignedPlayers);
 
   const isDraftComplete =
     formation &&
-    formationLayouts[formation].every((pos) => assignedPlayers[pos]) &&
-    suplenteSlots.every((slot) => assignedPlayers[slot]) &&
-    reservaSlots.every((slot) => assignedPlayers[slot]) &&
-    manager !== null;
+    formationLayouts[formation].every((pos) => assignedPlayers[pos]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-800 to-green-900 text-white px-6 py-10">
@@ -198,7 +185,7 @@ export default function Draft() {
           onSelect={handleCaptainSelect}
           availablePositions={formationLayouts[formation]}
         />
-      ) : isDraftComplete ? (
+      ) : showFinalTeam ? (
         <FinalTeam
           assignedPlayers={assignedPlayers}
           rating={rating}
@@ -208,6 +195,7 @@ export default function Draft() {
             setCaptain(null);
             setManager(null);
             setAssignedPlayers({});
+            setShowFinalTeam(false);
           }}
         />
       ) : (
@@ -217,6 +205,17 @@ export default function Draft() {
             assignedPlayers={assignedPlayers}
             onPositionClick={handlePositionClick}
           />
+
+          {isDraftComplete && (
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={() => setShowFinalTeam(true)}
+                className="px-6 py-3 bg-yellow-500 hover:bg-yellow-400 text-black font-bold rounded-lg shadow-lg transition"
+              >
+                Finalizar Draft
+              </button>
+            </div>
+          )}
 
           {selectingPosition && (
             <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
@@ -232,21 +231,16 @@ export default function Draft() {
                       onClick={() => handlePlayerAssign(player)}
                       className="relative cursor-pointer transition-transform hover:scale-105 aspect-[2/3] rounded-xl overflow-hidden shadow-md"
                     >
-                      {/* Fondo de carta */}
                       <img
                         src={player.backup_image}
                         alt="carta"
                         className="absolute inset-0 w-full h-full object-cover z-0"
                       />
-
-                      {/* Imagen del jugador */}
                       <img
                         src={player.image}
                         alt={player.name}
                         className="absolute inset-0 w-full h-full object-contain p-3 z-10"
                       />
-
-                      {/* Rating y posición (arriba a la izquierda) */}
                       <div className="absolute top-13 left-5 z-20 text-white drop-shadow font-bold text-sm sm:text-base">
                         <div className="text-lg sm:text-xl">
                           {player.rating}
@@ -255,8 +249,6 @@ export default function Draft() {
                           {player.position}
                         </div>
                       </div>
-
-                      {/* Nombre del jugador (más arriba del borde inferior) */}
                       <div className="absolute bottom-12 w-full text-center z-20 text-white font-semibold text-sm sm:text-base drop-shadow">
                         <p className="font-bold leading-tight">{player.name}</p>
                         <p className="text-xs">{player.nationality}</p>
