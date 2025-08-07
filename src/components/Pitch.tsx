@@ -7,6 +7,7 @@ export interface Player {
   id: number;
   name: string;
   position: string;
+  position_alternatives?: string[];
   rating: number;
   nationality: string;
   club: string;
