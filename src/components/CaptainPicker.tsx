@@ -1,9 +1,11 @@
 import allPlayers from "../data/players.json";
+import { Players } from "../pages/Players";
 
 export interface Player {
   id: number;
   name: string;
   position: string;
+  position_alternatives?: string[];
   rating: number;
   nationality: string;
   club: string;
@@ -13,10 +15,21 @@ export interface Player {
 
 interface Props {
   onSelect: (player: any) => void;
+  availablePositions: string[];
 }
 
-export default function CaptainPicker({ onSelect }: Props) {
-  const randomCaptains = allPlayers.sort(() => Math.random() - 0.5).slice(0, 5);
+export default function CaptainPicker({ onSelect, availablePositions }: Props) {
+  const filteredPlayers = allPlayers.filter(
+    (player) =>
+      availablePositions.includes(player.position) ||
+      player.position_alternatives?.some((alt) =>
+        availablePositions.includes(alt)
+      )
+  );
+
+  const randomCaptains = filteredPlayers
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 5);
 
   return (
     <div className="text-center">

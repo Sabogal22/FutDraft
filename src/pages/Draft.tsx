@@ -106,7 +106,14 @@ export default function Draft() {
       const layout = formationLayouts[formation];
       if (!layout) return;
 
-      const targetPos = layout.find((pos) => pos.startsWith(captain.position));
+      const targetPos = layout.find((pos) => {
+        const base = pos.replace(/\d+$/, "");
+        return (
+          base === captain.position ||
+          captain.position_alternatives?.includes(base)
+        );
+      });
+
       if (!targetPos) return;
 
       setAssignedPlayers((prev) => {
@@ -158,10 +165,9 @@ export default function Draft() {
 
     if (selectingPosition === "DT") {
       setManager(player);
-    } else {
       setAssignedPlayers((prev) => ({
         ...prev,
-        [selectingPosition!]: player,
+        DT: player,
       }));
     }
 
@@ -183,7 +189,10 @@ export default function Draft() {
       {!formation ? (
         <FormationSelector onConfirm={handleFormationConfirm} />
       ) : !captain ? (
-        <CaptainPicker onSelect={handleCaptainSelect} />
+        <CaptainPicker
+          onSelect={handleCaptainSelect}
+          availablePositions={formationLayouts[formation]}
+        />
       ) : isDraftComplete ? (
         <FinalTeam
           assignedPlayers={assignedPlayers}
