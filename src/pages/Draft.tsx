@@ -169,6 +169,11 @@ export default function Draft() {
         ...prev,
         DT: player,
       }));
+    } else if (selectingPosition) {
+      setAssignedPlayers((prev) => ({
+        ...prev,
+        [selectingPosition]: player,
+      }));
     }
 
     setSelectingPosition(null);
